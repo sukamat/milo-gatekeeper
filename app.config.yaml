@@ -1,0 +1,15 @@
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      milo-gatekeeper:
+        license: Apache-2.0
+        actions:
+          gatekeeper:
+            function: actions/gatekeeper/index.js
+            web: 'yes'
+            runtime: nodejs:20
+            inputs:
+              LOG_LEVEL: debug
+ 
