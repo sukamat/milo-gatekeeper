@@ -12,4 +12,10 @@ application:
             runtime: nodejs:20
             inputs:
               LOG_LEVEL: debug
- 
+          allowlist:
+            function: actions/allowlist/index.js
+            web: 'yes'
+            runtime: nodejs:20
+            inputs:
+              LOG_LEVEL: debug
+
