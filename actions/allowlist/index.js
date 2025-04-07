@@ -1,3 +1,23 @@
+/**
+ * Allowlist Action
+ * 
+ * Purpose: Manages an email allowlist for access control
+ * 
+ * Functionality:
+ * - Validates and stores email addresses in a JSON file
+ * - Checks if an email already exists in the allowlist
+ * - Returns the complete list of allowed emails
+ * 
+ * Input:
+ * - email: The email address to be added to the allowlist
+ * 
+ * Output:
+ * - Success/failure status
+ * - The email being processed
+ * - Total count of emails in the allowlist
+ * - Complete list of all allowed emails
+ */
+
 const { getAioLogger, errorResponse, checkMissingRequestInputs } = require('../utils');
 const filesLib = require('@adobe/aio-lib-files');
 
