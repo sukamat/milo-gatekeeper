@@ -18,4 +18,9 @@ application:
             runtime: nodejs:20
             inputs:
               LOG_LEVEL: debug
-
+          hello:
+            function: actions/hello/index.js
+            web: 'yes'
+            runtime: nodejs:20
+            inputs:
+              LOG_LEVEL: debug
